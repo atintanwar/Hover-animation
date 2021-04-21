@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body {
+            padding: 0;
+            margin: 0;
+        }
+        #main {
+           height: 100vh;
+           display: flex;
+
+        }
+        #hover-main {
+            width: 18vw;
+            height: 38vh;
+        }
+        #hover-image {
+            width: 18vw;
+            height: 38vh;
+            transform: translateX(-105%);
+            transition: all 0.5s ease-in-out;
+            background-repeat: no-repeat;
+        }
+
+        #hover-reveal {
+            overflow: hidden;
+            transform: translateX(105%);
+            transition: all 0.5s ease-in-out;
+        }
+
+        #hover-main.reveal #hover-reveal{
+            transform: translateX(0);
+        }
+
+        #hover-main.reveal #hover-image{
+            transform: translateX(0);
+        }</style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="hover-main">
+            <div id="hover-reveal">
+                <div id="hover-image" style="background-image: url(/story.006066a8.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
