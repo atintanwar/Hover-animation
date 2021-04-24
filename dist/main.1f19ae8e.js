@@ -15046,7 +15046,6 @@ var _rxjs = require("rxjs");
 var _operators = require("rxjs/operators");
 
 function lerp(start, end) {
-  console.log(start, end);
   var dx = end.x - start.x;
   var dy = end.y - start.y;
   return {
@@ -15118,7 +15117,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51630" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60691" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
