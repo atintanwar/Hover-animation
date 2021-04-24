@@ -15046,6 +15046,7 @@ var _rxjs = require("rxjs");
 var _operators = require("rxjs/operators");
 
 function lerp(start, end) {
+  console.log(start, end);
   var dx = end.x - start.x;
   var dy = end.y - start.y;
   return {
@@ -15089,7 +15090,7 @@ mouseEnter$.subscribe(function () {
 mouseleave$.subscribe(function () {
   return hoverMain.classList.remove('reveal');
 });
-},{"rxjs":"node_modules/rxjs/_esm5/index.js","rxjs/operators":"node_modules/rxjs/_esm5/operators/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"rxjs":"node_modules/rxjs/_esm5/index.js","rxjs/operators":"node_modules/rxjs/_esm5/operators/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -15117,7 +15118,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59931" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51630" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -15293,5 +15294,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
 //# sourceMappingURL=/main.1f19ae8e.js.map
